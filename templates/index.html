@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Recommendation System</title>
+</head>
+
+<body>
+
+    <h1>Music Recommendation System</h1>
+
+    <a href="/add">Add Song</a>
+
+    <hr>
+
+    <h2>Stored Songs</h2>
+
+    {% for song in songs %}
+
+        <p>
+
+            {{ song.song_name }}
+
+            | {{ song.artist }}
+
+            | {{ song.genre }}
+
+            <a href="/recommend/{{ song.song_name }}">
+                Recommend
+            </a>
+
+            <a href="/delete/{{ song.id }}">
+                Delete
+            </a>
+
+        </p>
+
+    {% endfor %}
+
+</body>
+
+</html>

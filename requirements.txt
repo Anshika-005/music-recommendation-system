@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+jinja2
+python-multipart
+sqlalchemy
+aiosqlite
+joblib
+pandas
+scikit-learn
+prometheus-client
+numpy
